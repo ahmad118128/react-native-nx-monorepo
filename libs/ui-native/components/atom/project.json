@@ -1,0 +1,25 @@
+{
+  "root": "libs/ui-native/components/atom",
+  "sourceRoot": "libs/ui-native/components/atom/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-native/components/atom/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui-native/components/atom"],
+      "options": {
+        "jestConfig": "libs/ui-native/components/atom/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

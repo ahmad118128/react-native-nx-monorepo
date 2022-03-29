@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "projects": {
+    "assets": "libs/assets",
+    "native-cli": "apps/native-cli",
+    "native-cli-e2e": "apps/native-cli-e2e",
+    "ui-native-components-atom": "libs/ui-native/components/atom",
+    "ui-native-components-molecule": "libs/ui-native/components/molecule",
+    "ui-native-components-organisms": "libs/ui-native/components/organisms",
+    "ui-native-components-templates": "libs/ui-native/components/templates",
+    "web": "apps/web",
+    "web-e2e": "apps/web-e2e"
+  }
+}

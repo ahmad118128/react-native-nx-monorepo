@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-monorepo/assets": ["libs/assets/src/index.ts"],
+      "@nx-monorepo/ui-native/components/atom": [
+        "libs/ui-native/components/atom/src/index.ts"
+      ],
+      "@nx-monorepo/ui-native/components/molecule": [
+        "libs/ui-native/components/molecule/src/index.ts"
+      ],
+      "@nx-monorepo/ui-native/components/organisms": [
+        "libs/ui-native/components/organisms/src/index.ts"
+      ],
+      "@nx-monorepo/ui-native/components/templates": [
+        "libs/ui-native/components/templates/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

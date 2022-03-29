@@ -1,0 +1,25 @@
+{
+  "root": "libs/ui-native/components/organisms",
+  "sourceRoot": "libs/ui-native/components/organisms/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-native/components/organisms/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui-native/components/organisms"],
+      "options": {
+        "jestConfig": "libs/ui-native/components/organisms/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

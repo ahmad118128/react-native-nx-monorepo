@@ -1,0 +1,25 @@
+{
+  "root": "libs/ui-native/components/molecule",
+  "sourceRoot": "libs/ui-native/components/molecule/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-native/components/molecule/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui-native/components/molecule"],
+      "options": {
+        "jestConfig": "libs/ui-native/components/molecule/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "root": "libs/ui-native/components/templates",
+  "sourceRoot": "libs/ui-native/components/templates/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-native/components/templates/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui-native/components/templates"],
+      "options": {
+        "jestConfig": "libs/ui-native/components/templates/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
